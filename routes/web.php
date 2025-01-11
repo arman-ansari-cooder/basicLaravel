@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[SimpleController::class,'loginShow'])->name('loginShow');
-Route::get('/register',[SimpleController::class,'registerShow'])->name('register.show');
+Route::get('/index', [SimpleController::class, 'loginShow'])->name('loginShow');
+Route::get('/register', [SimpleController::class, 'registerShow'])->name('register.show');
+Route::get('/',[SimpleController::class,'index'])->name('index.show');
+

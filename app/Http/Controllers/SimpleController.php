@@ -14,4 +14,8 @@ class SimpleController extends Controller
     {
         return view('register');
     }
+    public function index()
+    {
+        return view('index');
+    }
 }
