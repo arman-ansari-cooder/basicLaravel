@@ -15,9 +15,17 @@
         }
 
         .navbar-brand {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: bold;
             color: #fff;
+            padding: 5px 10px;
+        }
+
+        .navbar-brand img {
+            width: 100px; /* Smaller logo size */
+            height: 100px; /* Fixed height for a circle shape */
+            border-radius: 50%; /* Makes the logo circular */
+            object-fit: cover; /* Ensures the image is properly contained within the circle */
         }
 
         .nav-item a {
@@ -89,7 +97,7 @@
         /* Responsive Styles */
         @media (max-width: 768px) {
             .navbar-brand {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
 
             .navbar-nav .nav-item a {
@@ -113,7 +121,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('image/logo.webp') }}" alt="Brand Logo" style="width: 150px; height: auto;">
+            <img src="{{ asset('image/logo.webp') }}" alt="Brand Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,16 +130,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                    <a class="nav-link" href="{{route('index.show')}}"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Features</a>
+                    <a class="nav-link" href="#"><i class="fas fa-cogs"></i>Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-tags"></i> Pricing</a>
+                    <a class="nav-link" href="#"><i class="fas fa-tags"></i>Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Login</a>
                 </li>
             </ul>
         </div>
