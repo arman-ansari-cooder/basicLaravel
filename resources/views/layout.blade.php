@@ -21,7 +21,7 @@
         }
 
         .nav-item a {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #fff !important;
             padding: 10px 15px;
             transition: background-color 0.3s, color 0.3s;
@@ -45,14 +45,17 @@
         .footer {
             background: linear-gradient(90deg, #333, #555);
             color: white;
-            padding: 30px 0;
-            margin-top: 20px;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
         }
 
         .footer a {
             color: #f8f9fa;
             text-decoration: none;
             margin: 0 10px;
+            font-size: 1rem;
+            transition: color 0.3s, text-decoration 0.3s;
         }
 
         .footer a:hover {
@@ -61,13 +64,14 @@
         }
 
         .footer p {
-            margin: 0;
+            margin: 10px 0 0 0;
+            font-size: 0.9rem;
         }
 
         /* Footer Icons */
         .footer-icons a {
             font-size: 1.5rem;
-            margin: 0 10px;
+            margin: 0 15px;
             color: #f8f9fa;
             transition: color 0.3s;
         }
@@ -75,14 +79,39 @@
         .footer-icons a:hover {
             color: #00acee;
         }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .navbar-nav .nav-item a {
+                font-size: 1rem;
+            }
+
+            .footer {
+                padding: 30px 0;
+            }
+
+            .footer-icons a {
+                font-size: 1.2rem;
+                margin: 0 8px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('image/logo.webp') }}" alt="Brand Logo" style="width: 150px; height: auto;">
         </a>
@@ -114,7 +143,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer">
         <div class="container">
             <div class="footer-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
